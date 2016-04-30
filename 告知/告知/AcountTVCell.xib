@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AcountTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Na-LG-VHG">
+                        <rect key="frame" x="13" y="5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="hJu-Ze-PHc"/>
+                            <constraint firstAttribute="height" constant="30" id="nVJ-4u-uU6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auf-lj-qa6">
+                        <rect key="frame" x="56" y="0.0" width="42" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="fmH-zu-HZa"/>
+                            <constraint firstAttribute="width" constant="80" id="nIb-ZS-eXG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fmH-zu-HZa"/>
+                                <exclude reference="nIb-ZS-eXG"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrp-D1-Y9P">
+                        <rect key="frame" x="268" y="0.0" width="42" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="LSz-Nc-ZPT"/>
+                            <constraint firstAttribute="height" constant="40" id="MId-XH-ocI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LSz-Nc-ZPT"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-5u-8VP">
+                        <rect key="frame" x="0.0" y="38" width="320" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="hRK-hk-EzN"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Na-LG-VHG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="0J8-Ac-wDT"/>
+                    <constraint firstItem="Zrp-D1-Y9P" firstAttribute="baseline" secondItem="auf-lj-qa6" secondAttribute="baseline" id="4rj-LP-n4x"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sPO-5u-8VP" secondAttribute="trailing" constant="-8" id="7tz-qo-mob"/>
+                    <constraint firstItem="auf-lj-qa6" firstAttribute="centerY" secondItem="6Na-LG-VHG" secondAttribute="centerY" id="HOR-Ke-E21"/>
+                    <constraint firstItem="Zrp-D1-Y9P" firstAttribute="firstBaseline" secondItem="auf-lj-qa6" secondAttribute="firstBaseline" id="Tve-tq-auy"/>
+                    <constraint firstItem="6Na-LG-VHG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="XFQ-DP-VQo"/>
+                    <constraint firstItem="Zrp-D1-Y9P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YXd-a6-AaZ"/>
+                    <constraint firstItem="Zrp-D1-Y9P" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zu8-fy-NXx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Zrp-D1-Y9P" secondAttribute="trailing" constant="2" id="bUh-Ec-hp7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sPO-5u-8VP" secondAttribute="bottom" constant="-9" id="lX8-Jk-Wpj"/>
+                    <constraint firstItem="6Na-LG-VHG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="qig-mR-cQp"/>
+                    <constraint firstItem="auf-lj-qa6" firstAttribute="leading" secondItem="6Na-LG-VHG" secondAttribute="trailing" constant="13" id="sEF-OY-kPi"/>
+                    <constraint firstItem="sPO-5u-8VP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="znk-Gd-8dm"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0J8-Ac-wDT"/>
+                        <exclude reference="XFQ-DP-VQo"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="accountLabel" destination="Zrp-D1-Y9P" id="OpQ-YC-mnj"/>
+                <outlet property="accountNameLabel" destination="auf-lj-qa6" id="biu-0h-RM8"/>
+                <outlet property="accountPic" destination="6Na-LG-VHG" id="Y4d-BR-S21"/>
+                <outlet property="bottom_lineIV" destination="sPO-5u-8VP" id="R4o-ze-Sft"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="381"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bottom_line.png" width="410" height="1"/>
+    </resources>
+</document>

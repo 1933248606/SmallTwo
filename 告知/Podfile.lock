@@ -1,0 +1,44 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GuokeBase (1.1.1)
+  - Masonry (1.0.0)
+  - MJExtension (3.0.10)
+  - MJRefresh (3.1.0)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (1.1.3)
+  - UMengSocial (5.0)
+
+DEPENDENCIES:
+  - FMDB (~> 2.6.2)
+  - GuokeBase (from `https://github.com/jarry622/GuokeBase.git`)
+  - Masonry
+  - MJExtension (~> 3.0.10)
+  - MJRefresh (= 3.1.0)
+  - SDWebImage (= 3.7.5)
+  - SVProgressHUD (~> 1.0)
+  - UMengSocial (~> 5.0)
+
+EXTERNAL SOURCES:
+  GuokeBase:
+    :git: https://github.com/jarry622/GuokeBase.git
+
+CHECKOUT OPTIONS:
+  GuokeBase:
+    :commit: 2e7b4433f594e5fd34623cbe3f58f767bddabc8b
+    :git: https://github.com/jarry622/GuokeBase.git
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GuokeBase: cf3832ebd15dfd2b49b55f213e2adf54ac5efdab
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
+
+COCOAPODS: 0.39.0

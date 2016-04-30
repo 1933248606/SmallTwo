@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FocusTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只求一天一百单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng7-Bu-qvm">
+                        <rect key="frame" x="60" y="3" width="119" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="nVt-JB-dgF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这个人很懒，只有接单快..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pu-yx-VeK">
+                        <rect key="frame" x="60" y="26" width="175" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="互相关注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0l-Qm-tSL">
+                        <rect key="frame" x="270" y="28" width="42" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="wAO-R5-MbU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_each.png" translatesAutoresizingMaskIntoConstraints="NO" id="DDC-Fe-hNk">
+                        <rect key="frame" x="270" y="8" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6R8-uX-zhE"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wpt-tJ-obR">
+                        <rect key="frame" x="10" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="bVw-TT-FWL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="DDC-Fe-hNk" secondAttribute="trailing" constant="2" id="1Td-u9-Q1z"/>
+                    <constraint firstItem="9pu-yx-VeK" firstAttribute="top" secondItem="ng7-Bu-qvm" secondAttribute="bottom" constant="2" id="2EL-Oe-68h"/>
+                    <constraint firstItem="wpt-tJ-obR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="3CW-Uq-Giz"/>
+                    <constraint firstItem="9pu-yx-VeK" firstAttribute="leading" secondItem="wpt-tJ-obR" secondAttribute="trailing" constant="10" id="6bB-tA-2Co"/>
+                    <constraint firstItem="m0l-Qm-tSL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="9Zg-if-aCv"/>
+                    <constraint firstAttribute="bottom" secondItem="9pu-yx-VeK" secondAttribute="bottom" constant="4" id="AOg-dp-gl0"/>
+                    <constraint firstItem="ng7-Bu-qvm" firstAttribute="leading" secondItem="9pu-yx-VeK" secondAttribute="leading" id="KpQ-3q-dxc"/>
+                    <constraint firstItem="wpt-tJ-obR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="NOc-ty-2Sp"/>
+                    <constraint firstItem="m0l-Qm-tSL" firstAttribute="leading" secondItem="9pu-yx-VeK" secondAttribute="trailing" constant="35" id="TNf-tb-VvK"/>
+                    <constraint firstItem="9pu-yx-VeK" firstAttribute="centerY" secondItem="m0l-Qm-tSL" secondAttribute="centerY" id="bce-GQ-yjN"/>
+                    <constraint firstItem="wpt-tJ-obR" firstAttribute="bottom" secondItem="9pu-yx-VeK" secondAttribute="bottom" id="es5-oT-thB"/>
+                    <constraint firstItem="9pu-yx-VeK" firstAttribute="baseline" secondItem="m0l-Qm-tSL" secondAttribute="baseline" id="fzI-Ss-Cok"/>
+                    <constraint firstItem="DDC-Fe-hNk" firstAttribute="leading" secondItem="m0l-Qm-tSL" secondAttribute="leading" id="hTW-Jz-zSB"/>
+                    <constraint firstItem="m0l-Qm-tSL" firstAttribute="top" secondItem="DDC-Fe-hNk" secondAttribute="bottom" id="jte-HL-Kim"/>
+                    <constraint firstItem="wpt-tJ-obR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="leK-qn-fBS"/>
+                    <constraint firstItem="wpt-tJ-obR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="slN-pa-tnO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wpt-tJ-obR" secondAttribute="bottom" constant="-4" id="vB1-1V-ngy"/>
+                    <constraint firstItem="DDC-Fe-hNk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="vwU-qf-Zya"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="3CW-Uq-Giz"/>
+                        <exclude reference="NOc-ty-2Sp"/>
+                        <exclude reference="vB1-1V-ngy"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="focusMarkIV" destination="DDC-Fe-hNk" id="IBT-92-oQZ"/>
+                <outlet property="signatureLabel" destination="9pu-yx-VeK" id="eTL-91-GWD"/>
+                <outlet property="userHeadPic" destination="wpt-tJ-obR" id="MgU-cP-ghO"/>
+                <outlet property="userNameLabel" destination="ng7-Bu-qvm" id="8hp-4b-oem"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_each.png" width="20" height="20"/>
+        <image name="night10.jpg" width="600" height="374"/>
+    </resources>
+</document>

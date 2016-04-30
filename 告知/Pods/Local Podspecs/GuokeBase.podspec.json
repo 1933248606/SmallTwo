@@ -1,0 +1,28 @@
+{
+  "name": "GuokeBase",
+  "version": "1.1.1",
+  "summary": "Objective C additions for humans. Write ObjC _like a boss_.",
+  "description": "-map, -each, -select, unless(true){}, -includes, -upto, -downto, and many more!",
+  "homepage": "http://git.oschina.net/jarry622",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "guoke": "lihuimin622@qq.com"
+  },
+  "source": {
+    "git": "https://git.oschina.net/jarry622/GuokeBase.git",
+    "tag": "1.1.1"
+  },
+  "social_media_url": "https://twitter.com/mneorr",
+  "platforms": {
+    "ios": "4.0",
+    "osx": "10.6"
+  },
+  "requires_arc": false,
+  "source_files": [
+    "GkBase",
+    "GkBase/**/*.{h,m}"
+  ]
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AdvDetailsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_money_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="kQD-l9-fhb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAt-bt-qSP">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2V6-9m-Mwa"/>
+                            <constraint firstAttribute="width" constant="40" id="Yqb-o8-q5h"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="night10.jpg"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="HeadBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zxE-fF-aAR"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678901111111111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U34-FY-fRm">
+                        <rect key="frame" x="60" y="10" width="129" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="z1y-kq-0ak"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016.03.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biq-7G-fsn">
+                        <rect key="frame" x="60" y="30" width="60" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="dtv-L6-I9G"/>
+                            <constraint firstAttribute="width" constant="70" id="n3U-Pb-iHa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="n3U-Pb-iHa"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="具体评论的内容，你hiID阿迪还得还，年红红和佛山分行撒谎佛都是" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf5-Xy-PCh">
+                        <rect key="frame" x="5" y="55" width="310" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U34-FY-fRm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="2sP-rg-lKa"/>
+                    <constraint firstItem="U34-FY-fRm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="5hw-N2-TUP"/>
+                    <constraint firstItem="mf5-Xy-PCh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="6IY-br-o8x"/>
+                    <constraint firstItem="kQD-l9-fhb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7rZ-b8-Sg1"/>
+                    <constraint firstItem="biq-7G-fsn" firstAttribute="leading" secondItem="U34-FY-fRm" secondAttribute="leading" id="DDd-qi-P2h"/>
+                    <constraint firstItem="U34-FY-fRm" firstAttribute="leading" secondItem="kAt-bt-qSP" secondAttribute="trailing" constant="10" id="Dya-B4-DbN"/>
+                    <constraint firstItem="mf5-Xy-PCh" firstAttribute="centerX" secondItem="kQD-l9-fhb" secondAttribute="centerX" id="Gzm-XY-zmF"/>
+                    <constraint firstItem="kQD-l9-fhb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ODd-ha-e04"/>
+                    <constraint firstItem="biq-7G-fsn" firstAttribute="top" secondItem="U34-FY-fRm" secondAttribute="bottom" constant="5" id="V6M-20-eOA"/>
+                    <constraint firstItem="mf5-Xy-PCh" firstAttribute="top" secondItem="kAt-bt-qSP" secondAttribute="bottom" constant="5" id="Z9c-73-tAF"/>
+                    <constraint firstItem="kQD-l9-fhb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vJ8-dX-9dc"/>
+                    <constraint firstItem="U34-FY-fRm" firstAttribute="top" secondItem="kAt-bt-qSP" secondAttribute="top" id="vwK-Nu-OCE"/>
+                    <constraint firstAttribute="trailing" secondItem="kQD-l9-fhb" secondAttribute="trailing" id="zsN-Dw-eGV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CommentLabel" destination="mf5-Xy-PCh" id="hXU-p5-kGt"/>
+                <outlet property="PersonNameLabel" destination="U34-FY-fRm" id="wNK-EE-DlC"/>
+                <outlet property="TimeLabel" destination="biq-7G-fsn" id="X4z-3u-dLb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="my_money_border.png" width="155" height="135"/>
+        <image name="night10.jpg" width="600" height="374"/>
+    </resources>
+</document>

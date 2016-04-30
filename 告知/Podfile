@@ -1,0 +1,10 @@
+platform:ios,'7.3'
+pod'Masonry'
+pod 'GuokeBase', :git => 'https://github.com/jarry622/GuokeBase.git'
+pod 'SVProgressHUD', '~> 1.0'
+pod 'UMengSocial', '~> 5.0'
+pod 'MJRefresh','3.1.0'
+pod 'SDWebImage','3.7.5'
+pod 'MJExtension', '~> 3.0.10'
+pod 'FMDB', '~> 2.6.2'
+
